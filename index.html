@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Minesweeper</title>
+        <meta charset="utf-8" />
+        <style>
+            body {
+                margin: 0;
+            }
+            
+            #controls {
+                position: absolute;
+                width: 100vw;
+                height: 50px;
+                background-color: lightgray;
+                padding: 10px;
+                box-sizing: border-box;
+            }
+            
+            input[type="number"] {
+                width: 30px;
+            }
+            
+            #main {
+                width: 100vw;
+                top: 50px;
+                position: absolute;
+            }
+            
+            #canvas {
+                position: absolute;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="controls">
+            
+            <input type="button" id="digMode" value="Dig Mode"/>
+            <input type="button" id="flagMode" value="Flag Mode"/>
+            <input type="button" id="endGame" value="Show Solution"/>
+            
+            <label for="width">Width:</label>
+            <input type="number" id="width"/>
+            <label for="height">Height:</label>
+            <input type="number" id="height"/>
+            <label for="height">Mines:</label>
+            <input type="number" id="mines"/>
+            <input type="button" id="newGame" value="New Game"/>
+        </div>
+        <div id="main">
+            <canvas id="canvas"></canvas>
+        </div>
+        <script src="minesweeper.js"></script>
+    </body>
+</html>
